@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/edit_scanned_price"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:textSize="20sp"
+        android:text=""
+        android:gravity="center_horizontal" />
+
+    <!-- Button Submit -->
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnDone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="24dp"
+        android:layout_gravity="center_horizontal|bottom"
+        fbutton:buttonColor="#952A3C"
+        fbutton:shadowColor="#942B39"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="5dp"
+        />
+
+</LinearLayout>

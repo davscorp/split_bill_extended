@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto">
+
+    <cimb.niaga.app.billsplit.corecycle.VerticalScrollview
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:padding="20dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:text="Bills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_bill">
+
+                <ImageView
+                    android:background="@color/White"
+                    android:cropToPadding="true"
+                    android:id="@+id/img_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ListView
+                    android:id="@+id/sourcelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/newperson_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </cimb.niaga.app.billsplit.corecycle.VerticalScrollview>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Add Person"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            fbutton:buttonColor="#952A3C"
+            fbutton:shadowColor="#942B39"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
